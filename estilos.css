@@ -1,0 +1,168 @@
+/*TIPOGRAFIA*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+
+/*HEADER*/
+header{
+    background-color: black; /*Color negro*/
+    display: flex; /*Alineación de elementos */
+
+}
+
+#logo{
+    width: 5%; /*Tamaño del logo*/
+}
+
+.barra li{
+    display: inline-block; /*Alineación de links*/
+    margin: 10px 40px; /*Espaciados*/
+}
+
+.barra{ 
+    margin-left: 950px; /*Alineación a la derecha*/
+}
+
+.textobarra { /*Texto*/
+  text-decoration: none; 
+  color: white;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.textobarra:visited{
+    text-decoration: none;
+    color:white;
+}
+
+.textobarra:hover{
+    color: gray;
+}
+
+
+
+/*MAIN*/
+
+/*Animación del logo*/
+#logoanimado{ 
+    display: inline-block;
+    background-image: url(p.png);
+    margin: -230px 600px; /*Animación con la parte superior e inferior y centrado*/
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: animacion 2s infinite steps(3);
+   
+}
+@keyframes animacion{
+    0%{background-position: 675px,200px;}
+    100% {background-position: 0px,200px;}
+}
+
+/*Presentación con textos*/
+#presentacion{
+    display: block;
+    text-align: center;
+    margin-top: 270px;
+    font-family: Poppins;
+}
+h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+p{
+    font-size: 18px;
+    font-weight: 200;
+}
+h4{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*Boton*/
+#linkinstagram{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px; /*centrado en el boton*/
+    margin: auto; /*centrado*/
+    transition-duration: 1s;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.10);
+}
+
+#linkinstagram:visited{
+    text-decoration: none;
+    color:white;
+}
+
+#linkinstagram:hover{
+    background-color: white;
+    border:1px dashed black;
+    color: black;
+}
+
+/*Galeria de fotos*/
+.armadogaleria{ 
+   margin: 30px 50px; 
+   width: 40%;
+}
+
+img{
+    width: 100%;
+}
+.sombra{
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.20);
+}
+#galeria{
+    background-color: F6F6F6;
+    height: 1300px;
+    margin: 30px auto;
+    display: flex; 
+    flex-wrap:wrap; /* doble linea*/
+    justify-content: space-between ; /*espacio entre columnas*/
+}
+
+/*Video*/
+
+#video{
+    width: auto;
+    height: 700px;
+}
+#movimiento{
+    margin: 50px 200px;
+    width: 70%;
+}
+
+
+
+/*FOOTER*/
+footer{
+    display: inline-block;
+    width: 1420px;
+    height: 140px;
+    margin-top: -40px;
+    background-color: black;
+
+}
+#piedepagina{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    margin-left: 550px;
+    margin-top: 30px;
+}
+
+#mail{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 600px;
+    color: white;
+}

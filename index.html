@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar</title>
+    <!--css del lightbox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel= "icon" sizes="192x192" href="favicon.png">
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="LogoPilar" id="logo">
+        <ul class="barra">
+            <li id="boton1"> <a class="textobarra" href="#galeria"> Galeria de fotos </a> </li>
+            <li id="boton2"> <a class="textobarra" href="#video"> Video </a> </li> 
+        </ul>
+    </header>
+<main> 
+<div id="logoanimado"> </div>
+
+<div id="presentacion">
+    <h2>¡Hola! Soy Pilar</h2>
+    <p> <b>Una diseñadora en construcción </b> <br>
+        Estudiante de la Licenciatura en Diseño en la <br> Universidad Torcuato Di Tella. </p>
+    <h4> Conocé más sobre mis producciones</h4>
+    <h3> <a href="https://www.instagram.com/pilartricerri.design/" target="_blank" id="linkinstagram"> Instagram </a> </h3>
+</div>
+
+ <div id="galeria"> 
+
+    <div class="armadogaleria"> <a href="running.png" data-lightbox="galeria"><img src="running.png" alt="running" class="sombra"> </a> </div>
+
+    <div class="armadogaleria"> <a href="espejo.png" data-lightbox="galeria"><img src="espejo.png" alt="espejo" class="sombra"></a></div>
+    
+    <div class="armadogaleria"> <a href="artificial.png" data-lightbox="galeria"> <img src="artificial.png" class="sombra" alt="artificial"> </a></div>
+
+    <div class="armadogaleria"> <a href="francisca.png" data-lightbox="galeria"> <img src="francisca.png" class="sombra" alt="francisca"> </a></div>
+    
+</div>
+
+<div id="video">
+    <video src="movimiento.mp4" id="movimiento" controls></video>
+
+</div>
+</main>
+
+<footer> 
+    <h3 id="piedepagina"> ¡Gracias por llegar hasta aquí! </h3>
+    <h5 id="mail"> pilartri2015@gmail.com</h5>
+</footer>
+    <!--js de lightbox-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+<script>
+    lightbox.option({
+      'fadeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+</body>
+</html>
